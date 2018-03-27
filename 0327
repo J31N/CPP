@@ -23,3 +23,24 @@ public class HelloWorld {
 }
 ===================================================
 
+#include "stdio.h"
+int main()
+{
+    printf(" ****\n");
+    printf(" *\n");
+    printf(" * \n");
+    printf(" ****\n");
+}
+=============================================
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   cout<<"****"<<end1;
+   cout<<"*"<<end1;
+   cout<<"*"<<end1;
+   cout<<"****"<<end1;
+  }
+  ======================================
+  
