@@ -44,3 +44,229 @@ int main()
   }
   ======================================
   
+public class MainClass {
+    public static void main(String[] args) {
+        System.out.println("****");
+        System.out.println("*");
+        System.out.println("*");
+        System.out.println("****");
+    }
+}
+============================================
+
+#include <stdio.h>
+ 
+int main()
+{
+   int a = 21;
+   int b = 10;
+   int c ;
+ 
+   c = a + b;
+   printf("a + b = %d\n", c );
+   c = a - b;
+   printf("a - b = %d\n", c );
+   c = a * b;
+   printf("a * b = %d\n", c );
+   c = a / b;
+   printf("a / b = %d\n", c );
+   c = a % b;
+   printf("a % b = %d\n", c );
+   c = a++; 
+   printf("a++   = %d\n", c );
+   c = a--;  
+   printf("a--   = %d\n", c );
+}
+===========================================================
+
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+   int a = 21;
+   int b = 10;
+   int c;
+ 
+   c = a + b;
+   cout << "a + b = " << c << endl ;
+   c = a - b;
+   cout << "a - b = " << c << endl ;
+   c = a * b;
+   cout << "a * b = " << c << endl ;
+   c = a / b;
+   cout << "a / b = " << c << endl ;
+   c = a % b;
+   cout << "a % b = " << c << endl ;
+ 
+   int d = 10;   
+   c = d++;
+   cout << "d++   = " << c << endl ;
+ 
+   d = 10;    
+   c = d--;
+   cout << "d--   = " << c << endl ;
+   return 0;
+}
+=============================================================
+
+public class Test {
+ 
+  public static void main(String[] args) {
+     int a = 21;
+     int b = 10;
+     int c ;
+     int d = 10;
+     System.out.println("a + b = " + (a + b) );
+     System.out.println("a - b = " + (a - b) );
+     System.out.println("a * b = " + (a * b) );
+     System.out.println("b / a = " + (b / a) );
+     System.out.println("b % a = " + (b % a) );
+     System.out.println("c % a = " + (c % a) );
+     System.out.println("a++   = " +  (a++) );
+     System.out.println("a--   = " +  (a--) );
+     System.out.println("d++   = " +  (d++) );
+     System.out.println("++d   = " +  (++d) );
+  }
+}
+===========================================================
+
+#include <stdio.h>
+ 
+int main ()
+{
+   for( ; ; )
+   {
+      printf("無限執行下去！\n");
+   }
+   return 0;
+}
+==============================================================
+
+#include <iostream>
+using namespace std;
+ 
+int main ()
+{
+   for( ; ; )
+   {
+      printf("無限執行下去！\n");
+   }
+   return 0;
+}
+=================================================
+
+public class MainClass {
+    public static void main(String[] args) {
+      for(ture) {
+      System.out.println("無限執行下去！");
+     }
+   }
+}
+=============================================================
+
+#include <stdio.h> 
+#include <stdlib.h> 
+
+int main() 
+{ 
+for(int i=1;i<=9;i++) 
+{ 
+for(int j=1;j<=9;j++) 
+{ 
+printf("%dX%d=%d\t",i,j,i*j); 
+} 
+printf("\n"); 
+} 
+system("PAUSE"); 
+return 0; 
+}
+===========================================
+
+#include <iostream>
+using namespace std;
+int main (){
+for(int a=1;a<=9;a++){
+cout<<a<<"*"<<b<<"="<<a*b<<"/t";
+}
+cout<<end1;
+}
+system("pause");
+return 0;
+}
+=================================================
+
+public class table99{
+
+ public static void main(String[] args){
+ 
+  for (int i = 1,j = 1; i < 10 ; i=(j==9)?(i+1):(i),j=(j==9)?(1):(j+1)){
+   System.out.printf("%d*%d=%d\t",i,j,(i*j));
+   if (j==9){
+    System.out.println();
+   }
+  }
+ }
+}
+===========================================================
+
+#include<stdio.h>
+int main()
+{
+ int x,y,z,t;
+    printf("\n請输入三個數字:\n");
+    scanf("%d%d%d",&x,&y,&z);
+    if (x>y) { /*交換x,y的值*/
+        t=x;x=y;y=t;
+    }
+    if(x>z) { /*交换x,z的值*/
+        t=z;z=x;x=t;
+    }
+    if(y>z) { /*交换z,y的值*/
+        t=y;y=z;z=t;
+    }
+    printf("從小到大排序: %d %d %d\n",x,y,z);
+    return 0;
+}
+======================================================
+
+#include <iostream>
+using namespace std;
+int main ()
+{
+   int x,y,z,t;
+    cout<<請输入三個數字:<<end1;
+    cin>>x,y,z;
+    if (x>y) { /*交換x,y的值*/
+        t=x;x=y;y=t;
+    }
+    if(x>z) { /*交换x,z的值*/
+        t=z;z=x;x=t;
+    }
+    if(y>z) { /*交换z,y的值*/
+        t=y;y=z;z=t;
+    }
+   cout<<"從小到大排序: <<,x,y,z<<end1;
+    return 0;
+}
+===============================================
+
+import java.util.Scanner;
+public class MainClass {
+    public static void main(String[] args) {
+    System.out.println("請輸入三個數字：");
+    x = scanner.nextInt();
+    y = scanner.nextInt();
+    z = scanner.nextInt();
+    if (x>y) { /*交換x,y的值*/
+        t=x;x=y;y=t;
+    }
+    if(x>z) { /*交换x,z的值*/
+        t=z;z=x;x=t;
+    }
+    if(y>z) { /*交换z,y的值*/
+        t=y;y=z;z=t;
+    }
+    System.out.printf("從小到大排序: %d %d %d\n",x,y,z);
+   }
+}
