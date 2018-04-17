@@ -79,6 +79,50 @@ int S(int x,int n)
 ###### exercise3:矩陣相乘
 
 ```
-
+#include<iostream.h>
+#include<math.h>
+int a[2][2],b[2][2],c[2][2];
+ 
+void input()
+{
+for (int i=0;i<=1;i++){
+for (int j=0;j<=1;j++)
+{
+cout<<"請輸入a["<<i+1<<"]["<<j+1<<"]=";
+cin>>a[i][j];
+cout<<endl
+<<"請輸入b["<<i+1<<"]["<<j+1<<"]=";
+cin>>b[i][j];
+cout<<endl;	
+}
+}
+}
+void input2()
+{
+input();	
+for (int i=0;i<=1;i++){
+for (int j=0;j<=1;j++){
+for (int k=0;k<=1;i++){
+c[i][j]=c[i][j]+a[k][j]*b[i][k];
+}
+}
+}
+void main()
+{
+char x='y';
+while (x=='y'||x=='Y')
+{
+input2();
+for (int i=0;i<=1;i++){
+for (int j=0;j<=1;j++){
+cout<<"c["<<i+1<<"]["<<j+1<<"]="<<c[i][j]<<"\t";
+}
+cout<<endl;
+}
+cout<<"Do you want to try again?(y/n)";
+cin>>x;
+cout<<endl;
+}
+}
 
 ```
