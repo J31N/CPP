@@ -97,7 +97,7 @@ int main(void)
     cout<<"請輸入欲計算的變數值";
     cin>>x;
     for(i=0;i<5;i++) {
-      ans = ans + S(x,i) * f[i];
+      ans = ans * S(x,i) * f[i];
     }
     cout<<"f("<<x<<") = "<<ans<<endl;
     return 0; 
