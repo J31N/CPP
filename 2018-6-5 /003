@@ -1,0 +1,25 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+ 
+int main(){
+    char filename[]="d:///scores.csv";
+    fstream fp;
+    char line[128];
+    fp.open(filename, ios::in);//開啟檔案
+    if(!fp){//如果開啟檔案失敗，fp為0；成功，fp為非0
+        cout<<"Fail to open file: "<<filename<<endl;
+    }
+    cout<<"File Descriptor: "<<fp<<endl;
+    while(fp.getline(line, sizeof(line), '\n')){
+        cout<<line<<endl;
+    }
+ 
+    fp.close();//關閉檔案
+    system("pause");
+    return 0;
+}
+
+
+
+https://cg2010studio.com/2011/05/31/c-%E9%96%8B%E5%95%9F%E6%AA%94%E6%A1%88%E5%92%8C%E8%AE%80%E5%8F%96%E6%AA%94%E6%A1%88-open-file-and-read-file/
