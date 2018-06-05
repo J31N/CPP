@@ -1,0 +1,31 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+使用namespace std;
+
+int main（）
+{
+  ifstream輸入（“c：///scores.txt”）;
+
+  //讀取數據
+  字符串firstName;
+  char mi;
+  字符串lastName;
+  int分數;
+  輸入>>名字>> mi >> lastName >>得分;
+  cout << firstName <<“”<< mi <<“”<< lastName <<“”
+    <<分數<endl;
+
+  輸入>>名字>> mi >> lastName >>得分;
+  cout << firstName <<“”<< mi <<“”<< lastName <<“”
+    <<分數<endl;
+  輸入>>名字>> mi >> lastName >>得分;
+  cout << firstName <<“”<< mi <<“”<< lastName <<“”
+    <<分數<endl;
+
+  input.close（）;
+
+  cout <<“完成”<< endl;
+
+  返回0;
+}
