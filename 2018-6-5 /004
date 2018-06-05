@@ -1,0 +1,32 @@
+#include <iostream>
+#include <fstream> /* ifstream class */
+#include <string> /* string class */
+#include <cstdlib> /* atoi */
+#include <sstream> /* istringstream class */
+using namespace std; 
+#define ROW 3
+#define COL 4
+#define filename "Input.csv" 
+int main(){
+    int arr[ROW][COL] = {0};
+    ifstream fin(filename);
+    if(!fin) cout << "open fail." << endl;
+    else{ /* 開成功, 進行讀檔*/ string str_buf;
+	int i=0, j=0; /* 依陣列大小讀入*/ 
+	for(i=0; i!=ROW; ++i){ 
+	    getline(fin, str_buf); /* 先讀入一整行*/ 
+	    istringstream stream(str_buf); /* 使用istringstream */ 
+	    for(j=0; j!=COL; ++j) { /* 讀單一欄位*/ /* 將 stream 內容, 以逗號分隔逐一讀取 */ 
+	        getline(stream, str_buf, ','); /* 用atoi 將字串轉成整數, 若要轉浮點數用atof */ 
+	        arr[i][j] = atoi(str_buf.c_str()); 
+		} 
+	} 
+	fin.close(); /* 結束，關檔*/ 
+    fin.clear(); /* 避免以後重覆使用,把flag 清掉*/ /* 最後輸出結果*/ 
+    for(i=0; i!=ROW; ++i){ 
+	    for(j=0; j!=COL; ++j) 
+		cout << arr[i][j] << ' '; cout << endl; 
+		} 
+	} 
+	return 0;
+} 
